@@ -1,6 +1,7 @@
 package com.zipcodewilmington.scientific_calculator;
 import com.zipcodewilmington.scientificcalculator.CoreCalculator;
 import com.zipcodewilmington.scientificcalculator.ScienCalc;
+import com.zipcodewilmington.scientificcalculator.MainApplication;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -387,187 +388,187 @@ public class TestMainApplication {
 
     @Test
     void sineOneShouldEqualPointZeroOneSevenFourFiveEtc(){
-        CoreCalculator sin0 = new CoreCalculator();
+        ScienCalc sin0 = new ScienCalc();
         assertEquals(.01745240643728351, sin0.sine(1));
     }
 
     @Test
     void sineNegOneShouldEqualNegPointZeroOneSevenFourFiveEtc(){
-        CoreCalculator sin1 = new CoreCalculator();
+        ScienCalc sin1 = new ScienCalc();
         assertEquals(-.01745240643728351, sin1.sine(-1));
     }
 
     @Test
     void sineZeroShouldEqualZero(){
-        CoreCalculator sin2 = new CoreCalculator();
+        ScienCalc sin2 = new ScienCalc();
         assertEquals(0, sin2.sine(0));
     }
 
     @Test
     void sineThreeHundredSixtyShouldEqualPointNineFiveEightNineOneFiveEtc(){
-        CoreCalculator sin3 = new CoreCalculator();
+        ScienCalc sin3 = new ScienCalc();
         assertEquals(0.95891572341, sin3.sine(360));
     }
     //^Fails Unsure Why
 
     @Test
     void cosOneShouldEqualPointNineNineNineEightFourEtc(){
-        CoreCalculator cos0 = new CoreCalculator();
+        ScienCalc cos0 = new ScienCalc();
         assertEquals(.9998476951563913, cos0.cosine(1));
     }
 
 
     @Test
     void cosNegOneShouldEqualPointNineNineNineEightFourEtc(){
-        CoreCalculator cos1 = new CoreCalculator();
+        ScienCalc cos1 = new ScienCalc();
         assertEquals(.9998476951563913, cos1.cosine(-1));
     }
 
     @Test
     void cosZeroShouldEqualOne(){
-        CoreCalculator cos2 = new CoreCalculator();
+        ScienCalc cos2 = new ScienCalc();
         assertEquals(1, cos2.cosine(0));
     }
 
     @Test
     void cosThreeHundredSixtyShouldEqualOne(){
-        CoreCalculator cos3 = new CoreCalculator();
+        ScienCalc cos3 = new ScienCalc();
         assertEquals(1, cos3.cosine(360));
     }
 
     @Test
     void tanOneShouldEqualOnePointZeroOneSevenFourFiveEtc(){
-        CoreCalculator tan0 = new CoreCalculator();
+        ScienCalc tan0 = new ScienCalc();
         assertEquals(.017455064928217585, tan0.tangent(1));
     }
 
     @Test
     void tanNegOneShouldEqualNegPointZeroOneSevenFourFiveEtc(){
-        CoreCalculator tan1 = new CoreCalculator();
+        ScienCalc tan1 = new ScienCalc();
         assertEquals(-0.017455064928217585, tan1.tangent(-1));
     }
 
     @Test
     void tanZeroShouldEqualZero(){
-        CoreCalculator tan2 = new CoreCalculator();
+        ScienCalc tan2 = new ScienCalc();
         assertEquals(0, tan2.tangent(0));
     }
 
     @Test
     void tanThreeHundredSixtyShouldEqualNegThreePointThreeEightZeroOneFourEtc(){
-        CoreCalculator tan3 = new CoreCalculator();
+        ScienCalc tan3 = new ScienCalc();
         assertEquals(-3.38014041, tan3.tangent(360));
     }
     //^Fails Unsure Why
 
     @Test
     void asineOneShouldEqualOnePointFiveSevenZeroSevenNineEtc(){
-        CoreCalculator asin0 = new CoreCalculator();
+        ScienCalc asin0 = new ScienCalc();
         assertEquals(1.5707963267948966, asin0.inverseSine(1));
     }
 
     @Test
     void asineNegOneShouldEqualNegOnePointFiveSevenZeroSevenNineEtc(){
-        CoreCalculator asin1 = new CoreCalculator();
+        ScienCalc asin1 = new ScienCalc();
         assertEquals(-1.5707963267948966, asin1.inverseSine(-1));
     }
 
     @Test
     void asineZeroShouldEqualZero(){
-        CoreCalculator asin2 = new CoreCalculator();
+        ScienCalc asin2 = new ScienCalc();
         assertEquals(0, asin2.inverseSine(0));
     }
 
     @Test
     void acosOneShouldEqualZero(){
-        CoreCalculator acos0 = new CoreCalculator();
+        ScienCalc acos0 = new ScienCalc();
         assertEquals(0, acos0.inverseCosine(1));
     }
 
     @Test
     void acosNegOneShouldEqualPi(){
-        CoreCalculator acos1 = new CoreCalculator();
+        ScienCalc acos1 = new ScienCalc();
         assertEquals(3.141592653589793, acos1.inverseCosine(-1));
     }
 
     @Test
     void acosZeroShouldEqualOnePointFiveSevenZeroSevenNineEtc(){
-        CoreCalculator acos2 = new CoreCalculator();
+        ScienCalc acos2 = new ScienCalc();
         assertEquals(1.5707963267948966, acos2.inverseCosine(0));
     }
 
     @Test
     void atanOneShouldEqualPointSevenEightFiveThreeNineEtc(){
-        CoreCalculator atan0 = new CoreCalculator();
+        ScienCalc atan0 = new ScienCalc();
         assertEquals(0.785398164928217585, atan0.tangent(1));
     }
     //^Fails Unsure Why
 
     @Test
     void atanNegOneShouldEqualNegPointSevenEightFiveThreeNineEtc(){
-        CoreCalculator atan1 = new CoreCalculator();
+        ScienCalc atan1 = new ScienCalc();
         assertEquals(-0.785398164928217585, atan1.tangent(-1));
     }
     //^Fails Unsure Why
 
     @Test
     void atanZeroShouldEqualZero(){
-        CoreCalculator atan2 = new CoreCalculator();
+        ScienCalc atan2 = new ScienCalc();
         assertEquals(0, atan2.tangent(0));
     }
 
     @Test
     void atanThreeHundredSixtyShouldEqualOnePointFiveSixEightZeroOne(){
-        CoreCalculator atan3 = new CoreCalculator();
+        ScienCalc atan3 = new ScienCalc();
         assertEquals(1.56801856, atan3.tangent(360));
     }
     //^Fails Unsure Why
 
     @Test
     void logOneShouldEqualZero(){
-        CoreCalculator log0 = new CoreCalculator();
+        ScienCalc log0 = new ScienCalc();
         assertEquals(0, log0.log(1));
     }
 
     @Test
     void logThreeHundredSixtyShouldEqualTwoPointFiveFiveSixThreeZeroEtc(){
-        CoreCalculator log1 = new CoreCalculator();
+        ScienCalc log1 = new ScienCalc();
         assertEquals(2.5563025007672873, log1.log(360));
     }
 
     @Test
     void inverseLogOneShouldEqualTen(){
-        CoreCalculator alog0 = new CoreCalculator();
+        ScienCalc alog0 = new ScienCalc();
         assertEquals(10, alog0.inverseLog(1));
     }
 
     @Test
     void inverseLogNegOneShouldEqualPointOne(){
-        CoreCalculator alog1 = new CoreCalculator();
+        ScienCalc alog1 = new ScienCalc();
         assertEquals(.1, alog1.inverseLog(-1));
     }
 
     @Test
     void inverseLogZeroShouldEqualOne(){
-        CoreCalculator alog2 = new CoreCalculator();
+        ScienCalc alog2 = new ScienCalc();
         assertEquals(1, alog2.inverseLog(0));
     }
 
     @Test
     void inverseLogFiveShouldEqualOneHundredThousand(){
-        CoreCalculator alog3 = new CoreCalculator();
+        ScienCalc alog3 = new ScienCalc();
         assertEquals(100000, alog3.inverseLog(5));
     }
 
     @Test
     void natLogOneShouldEqualZero(){
-        CoreCalculator natlog0 = new CoreCalculator();
+        ScienCalc natlog0 = new ScienCalc();
         assertEquals(0, natlog0.naturalLog(1));
     }
 
     @Test
     void natLogThreeHundredSixtyShouldEqualFivePointEightEightSixOneZeroEtc(){
-        CoreCalculator natlog1 = new CoreCalculator();
+        ScienCalc natlog1 = new ScienCalc();
         assertEquals(5.886104031450156, natlog1.naturalLog(360));
     }
 
