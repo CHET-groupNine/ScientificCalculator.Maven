@@ -1,7 +1,6 @@
 package com.zipcodewilmington.scientific_calculator;
 import com.zipcodewilmington.scientificcalculator.CoreCalculator;
 import com.zipcodewilmington.scientificcalculator.ScienCalc;
-import com.zipcodewilmington.scientificcalculator.MainApplication;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 //If an input is negative and is multiplied by 0 the result is -0.0
 //If result is -0.0 it should be multiplied by
-// Divide by 0 causes error
 // Cannot do Square Root of negative number
 // Cannot accept string anything other than number will throw error
 // Rounding Errors
@@ -40,7 +38,7 @@ public class TestMainApplication {
         CoreCalculator addNeg = new CoreCalculator();
         assertEquals(-2, addNeg.add(-1,-1));
     }
-
+    //^-0.0 Bug
     @Test
     public void fiftyPointEightPlusFiftyPointTwoShouldEqualOneHundredOne(){
         CoreCalculator addFloat = new CoreCalculator();
@@ -58,7 +56,7 @@ public class TestMainApplication {
         CoreCalculator addFloat3 = new CoreCalculator();
         assertEquals(101.2, addFloat3.add(50.8,50.4));
     }
-
+    // Rounding Err
     @Test
     public void fiftyPointEightPlusFiftyPointFiveShouldEqualOneHundredOnePointThree(){
         CoreCalculator addFloat4 = new CoreCalculator();
@@ -111,13 +109,13 @@ public class TestMainApplication {
         CoreCalculator subtractFloat = new CoreCalculator();
         assertEquals(.6, subtractFloat.subtract(50.8,50.2));
     }
-
+    //^Rounding Err
     @Test
     public void pointFiveMinusPointFourShouldEqualPointOne(){
         CoreCalculator subtractFloat1 = new CoreCalculator();
         assertEquals(.1, subtractFloat1.subtract(.5,.4));
     }
-
+    //^Rounding Err
     @Test
     public void oneMinusPointOneShouldEqualPointNine(){
         CoreCalculator subtractFloat2 = new CoreCalculator();
@@ -217,7 +215,7 @@ public class TestMainApplication {
         CoreCalculator divideNeg3 = new CoreCalculator();
         assertEquals(0, divideNeg3.divide(0,-1));
     }
-
+    //^-0.0 Bug
     @Test
     public void fiftyPointEightDividedByFiftyPointTwoShouldEqualOnePointZeroOneOneNineFiveTwoOneNineOneTwo(){
         CoreCalculator divideFloat = new CoreCalculator();
@@ -379,7 +377,7 @@ public class TestMainApplication {
         CoreCalculator reverse4 = new CoreCalculator();
         assertEquals(0, reverse4.reverse(0));
     }
-
+    //^-0.0 Bug
     @Test
     public void tenThousandReverseShouldEqualNegTenThousand(){
         CoreCalculator reverse5 = new CoreCalculator();
